@@ -2,6 +2,7 @@ import { Widget } from '../common/Widget';
 
 import { Card, CardTitle, CardDescription } from '@/components/ui';
 function Highlights() {
+  // const unicode = htmlEntityToUnicode("&#8451;");
   return (
     <Widget
       title="Today's Highlights"
@@ -133,6 +134,7 @@ function Highlights() {
             />
             <p className="font-semibold text-2xl">
               64
+              {/* '\u2103' */}
               <span className="text-base">{'\u2103'}</span>
             </p>
           </div>
@@ -142,6 +144,12 @@ function Highlights() {
   );
 }
 
+// function htmlEntityToUnicode(entity: string) {
+//   // 숫자 부분만 추출
+//   const codePoint = parseInt(entity.replace('&#', '').replace(';', ''), 10);
+//   // 유니코드 이스케이프 시퀀스로 변환
+//   return `\\u${codePoint.toString(16).padStart(4, '0')}`;
+// }
 /**
  * 습도 Humidity
  * 기압  Pressure
