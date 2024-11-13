@@ -57,7 +57,10 @@ export default {
 
         'gray-100': '#b3b2b2',
         'gray-200': '#cccccc',
-        'gray-300': '#a5a5a5',
+        'gray-300': '#A5A5A5',
+      },
+      gridTemplateRows: {
+        custom: '2fr 3fr',
       },
     },
   },
