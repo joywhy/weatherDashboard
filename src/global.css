@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --black-color-100: #181917;
   --black-color-200: #727272;
 
@@ -22,11 +22,12 @@
 .page__container {
   display: grid;
   height: calc(100vh - 95px);
-  /* 가로 */
+
   grid-template-rows: 2fr 3fr;
-  /* 세로 */
+
   grid-template-columns: repeat(4, 1fr);
 
   gap: 20px;
   margin-top: 20px;
-}
+} 
+*/

@@ -1,4 +1,4 @@
-import Card from '../molecules/Card';
+import { Widget } from '../molecules/Widget';
 function Weekly() {
   /**
    * section 과 article
@@ -6,14 +6,14 @@ function Weekly() {
    *    생각해서  오늘의 날씨를 today 는 article로 감쌌습니다.
    */
   return (
-    <Card
+    <Widget
       title="7 Days"
       des="이번주 날시를 조회하고 있습니다."
       size="col-span-1"
     >
       <div></div>
-    </Card>
+    </Widget>
   );
 }
 
-export default Weekly;
+export { Weekly };
