@@ -1,4 +1,4 @@
-import { Widget } from '../molecules/Widget';
+import { Widget } from '../common/Widget';
 
 import { Card, CardTitle, CardDescription } from '@/components/ui';
 function Highlights() {
@@ -52,7 +52,7 @@ function Highlights() {
               />
               <div className="">
                 <p className="text-xs color-gray">Sunrise</p>
-                <p className="text-3xl">07:00AM</p>
+                <p className="text-2xl">07:00AM</p>
               </div>
             </div>
             <div className="Sunset flex">
@@ -63,12 +63,11 @@ function Highlights() {
               />
               <div className="">
                 <p className="text-xs color-gray">Sunset</p>
-                <p className="text-3xl">05:34PM</p>
+                <p className="text-2xl">05:34PM</p>
               </div>
             </div>
           </div>
         </WeatherInfo>
-
         {/* 습도 */}
         <WeatherInfo
           title="습도"

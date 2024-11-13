@@ -17,7 +17,7 @@ function Widget({
   size?: string;
 }) {
   // children  ReactNode 설명
-  //article / section  둘중 선택할 수 있도록
+
   //테일윈드 색상 변수 설정 방법 그리고 글로벌 css 적용시 연동방법이 궁금합니다.
   return (
     <Card className={size}>

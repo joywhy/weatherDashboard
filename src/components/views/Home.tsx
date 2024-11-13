@@ -1,5 +1,11 @@
 import Header from '../Header';
-import { Today, Hourly, WeatherMap, Highlights } from '@/components/organisms';
+import {
+  Today,
+  Hourly,
+  WeatherMap,
+  Highlights,
+  Weekly,
+} from '@/components/home';
 
 function HomePage() {
   return (
@@ -12,6 +18,7 @@ function HomePage() {
           <Hourly />
           <WeatherMap />
           <Highlights />
+          <Weekly />
         </main>
       </div>
     </div>

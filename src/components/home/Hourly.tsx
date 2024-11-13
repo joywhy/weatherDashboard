@@ -1,4 +1,4 @@
-import { Widget } from '../molecules/Widget';
+import { Widget } from '../common/Widget';
 import { Card } from '@/components/ui';
 function Hourly() {
   /**
