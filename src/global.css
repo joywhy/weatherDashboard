@@ -1,0 +1,32 @@
+:root {
+  --black-color-100: #181917;
+  --black-color-200: #727272;
+
+  --gray-color-100: #b3b2b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter, sans-serif;
+}
+.page {
+  width: '100%';
+  height: 100vh;
+
+  background-color: var(--black-color-100);
+  padding: 20px;
+}
+
+.page__container {
+  display: grid;
+  height: calc(100vh - 95px);
+  /* 가로 */
+  grid-template-rows: 2fr 3fr;
+  /* 세로 */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+  margin-top: 20px;
+}
