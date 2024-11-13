@@ -1,20 +1,27 @@
-import Header from '../Header';
-import Today from '@/components/organisms/Today';
-import Hourly from '@/components/organisms/Hourly';
-import Highlights from '@/components/organisms/Highlights';
-import Weekly from '@/components/organisms/Weekly';
+import { Header } from '@/components/ui';
+import {
+  GetTodayWidget,
+  GetKakaoMapWidget,
+  GetHourlyWidget,
+} from '@/components/home';
 function HomePage() {
   return (
     <div className="page">
-      {/* page__container 네이밍 규칙 scss 할때 좋음  */}
-      <Header />
-      <main className="page__container ">
-        <Today />
-        <Hourly />
-        <div className=" col-span-1 bg-white rounded-md">지도</div>
-        <Highlights />
-        <Weekly />
-      </main>
+      <div className="page__container bg-stone-900">
+        <Header />
+        {/* w-full 과 h-full 이 왜 나머지로 꽉차는 거지?
+         page 가 100vh  100vw 라서 그런가 ?
+         h-full이 지워지는 거라고 알면 된다. 
+        */}
+        <div className="w-full h-full flex flex-col items-center justify-start pb-6 px-6 gap-6">
+          <div className="w-full flex items-flex justify-start gap-6">
+            <GetTodayWidget />
+            <GetHourlyWidget />
+            <GetKakaoMapWidget />
+          </div>
+          <div className="w-full flex items-center gap-6"></div>
+        </div>
+      </div>
     </div>
   );
 }

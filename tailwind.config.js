@@ -50,14 +50,6 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
-
-        'black-100': '#181917',
-        'black-200': '#727272',
-        'black-300': '#2F2F2F',
-
-        'gray-100': '#b3b2b2',
-        'gray-200': '#cccccc',
-        'gray-300': '#a5a5a5',
       },
     },
   },
