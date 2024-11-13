@@ -132,7 +132,8 @@ function Highlights() {
               alt="습도 이미지"
             />
             <p className="font-semibold text-2xl">
-              64<span className="text-base"> %</span>
+              64
+              <span className="text-base">{'\u2103'}</span>
             </p>
           </div>
         </WeatherInfo>
