@@ -25,6 +25,6 @@ const SearchBar = React.forwardRef<HTMLInputElement, InputProps>(
     );
   }
 );
-SearchBar.displayName = 'SearchBar';
+SearchBar.displayName = 'SearchBar'; // 이건 왜 사용하는지
 
 export { SearchBar };
