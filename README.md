@@ -7,3 +7,4 @@
 3. 리액트 카카오맵 API SDK 설치 : `npm install react-kakao-maps-sdk`;
 
 - 참고 문서 : [리액트 카카오맵](https://react-kakao-maps-sdk.jaeseokim.dev/docs/intro);
+- `npm install react-kakao-maps-sdk`
