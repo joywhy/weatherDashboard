@@ -176,7 +176,9 @@ function HomePage() {
     fetchTideApi();
     getOneWeekWeather();
   }, []);
-
+  console.log('weatherData', weatherData);
+  console.log('tideData', tideData);
+  console.log('oneWeekWeatherSummary', oneWeekWeatherSummary);
   return (
     <div className="page">
       <div className="page__container">
