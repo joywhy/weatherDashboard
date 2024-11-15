@@ -4,9 +4,19 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
+  HourlyCard,
 } from '@/components';
+import { ForecastDay, HourlyData } from '@/types';
 
-function GetHourlyWidget() {
+interface Props {
+  data: ForecastDay;
+}
+
+function GetHourlyWidget({ data }: Props) {
+  if (!data || !data.hour) {
+    return <div>데이터를 블러오는 중입니다...</div>;
+  }
+
   return (
     <Card className="flex-1 max-w-[calc(50%-40px)] h-full">
       <CardHeader>
@@ -16,138 +26,9 @@ function GetHourlyWidget() {
         </CardDescription>
       </CardHeader>
       <CardContent className="w-full flex items-center gap-4 overflow-x-scroll border border-red-500">
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
-        <Card className="w-24 min-w-24 h-fit flex flex-col items-center pt-[10px] pb-[6px] gap-1 bg-neutral-50">
-          <span className="text-sm">오후 1시</span>
-          <img src="src/assets/icons/1030n.svg" alt="" className=" h-14 w-14" />
-          <div className="w-full flex items-start justify-center">
-            <span className="poppins-medium scroll-m-20 text-xl font-medium tracking-tight">
-              17
-            </span>
-            <span className="text-[13px] ml-[1px] mt-[1px] font-medium">
-              &#8451;
-            </span>
-          </div>
-        </Card>
+        {data.hour.map((item: HourlyData) => {
+          return <HourlyCard data={item} key={item.time} />;
+        })}
       </CardContent>
     </Card>
   );

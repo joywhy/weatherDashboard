@@ -7,6 +7,8 @@ export { GetHourlyWidget } from './home/GetHourlyWidget';
 export { GetKakaoMapWidget } from './home/GetKakaoMapWidget';
 export { GetTodayHighlightsWidget } from './home/GetTodayHighlightsWidget';
 export { GetDayItem } from './home/GetDayItem';
+export { HourlyCard } from './home/HourlyCard';
+export { GetWeekWidget } from './home/GetWeekWidget';
 
 /** UI 기초 컴포넌트 */
 export { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
