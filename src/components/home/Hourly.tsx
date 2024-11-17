@@ -18,7 +18,8 @@ function Hourly() {
       des="오늘의 시간대별 날씨를 조회하고 있습니다."
       size="col-span-2 relative"
     >
-      <div className="flex gap-3  absolute w-[calc(100%-30px)] overflow-hidden">
+      {/* w-[calc(100%-30px)] */}
+      <div className="w-full flex gap-3  absolute pl-4 pb-5 right-[0px]  overflow-x-scroll  border border-red-500 ">
         <div className="  flex  gap-3 ">
           {data.map((item, index) => (
             <HourlyCard

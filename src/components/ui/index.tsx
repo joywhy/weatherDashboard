@@ -13,3 +13,4 @@ export { Avatar, AvatarImage, AvatarFallback } from './avatar';
 export { Input } from './input';
 
 export { Separator } from './separator';
+export { SearchBar } from './SearchBar';
