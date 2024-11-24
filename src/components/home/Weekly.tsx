@@ -88,13 +88,13 @@ function DayInfoLi({ img, temp, temp2, date, week }: props) {
           src={`/src/assets/icons/${img}.svg`}
           alt="날씨 사진"
         />
-        <p className="color-red">
+        <p className="text-red-400">
           {temp}
-          <span className="color-gray"> C</span>
+          <span className="text-gray-600"> C</span>
         </p>
-        <p className="color-blue-500">
+        <p className="text-blue-500">
           {temp2}
-          <span className="color-gray"> C</span>
+          <span className="text-gray-600"> C</span>
         </p>
       </div>
 
